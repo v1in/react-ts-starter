@@ -15,7 +15,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint '*/**/*.{ts,tsx}'",
     "lint:fix": "eslint '*/**/*.{ts,tsx}' --quiet --fix",
-    "format": "prettier --write \"./**/*.{ts,tsx}\""
+    "format": "prettier --write \"./**/*.{ts,tsx}\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -38,7 +39,18 @@
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.3.2"
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.1",
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1"
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && pretty-quick --staged"
+    }
   },
   "browserslist": {
     "production": [
