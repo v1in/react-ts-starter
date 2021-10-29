@@ -1,4 +1,4 @@
-# react-starter-typescript
+# react-ts-starter
 
 React starter with typescript.
 
@@ -34,7 +34,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `npm i`
+
+Installs package dependencies:
 
 ### `npm start`
 
