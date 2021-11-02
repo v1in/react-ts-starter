@@ -6,7 +6,7 @@
     "es6": true,
     "node": true
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "import"],
   "extends": [
     "airbnb-typescript",
     "airbnb/hooks",
@@ -41,6 +41,6 @@
     "react/no-unescaped-entities": "off",
     "@typescript-eslint/no-empty-function": "off",
     "no-console": "off",
-    "no-param-reassign": [2, { "props": false }]
+    "no-param-reassign": [2, {"props": false}]
   }
 }
