@@ -18,8 +18,7 @@
     "lint": "eslint '*/**/*.{ts,tsx}'",
     "lint:fix": "eslint '*/**/*.{ts,tsx}' --quiet --fix",
     "preview": "vite preview",
-    "prepare": "husky",
-    "lint-staged": "lint-staged"
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "^19.0.0",
